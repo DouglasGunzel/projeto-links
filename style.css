@@ -16,8 +16,10 @@ body *{
 }
 
 #container{
-    width: 360px;
+    width: 100vh;
+    max-width: 588px;
     margin: 56px auto 0px;
+    padding: 0 24px;
 }
 
 #profile{
@@ -95,6 +97,11 @@ footer{
 
 footer div {
     padding: 4px 0px 0px 10px;
-
 }
 
+@media (min-width: 700px) {
+    body{
+        background: url(imagens/bg-desktop.jpg) no-repeat top center/cover;
+        height: 100vh;
+    }
+}
